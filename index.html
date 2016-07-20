@@ -1,5 +1,4 @@
 <!doctype html>
-<<<<<<< HEAD
 <html>
 <head>
 	<meta charset="utf-8">
@@ -301,7 +300,141 @@
     </div>
         <fieldset id="visibilityPrepareBilling">
             <legend><h2>Billing Information</h2></legend>
-        </fieldset>  visibilityPrepareBilling 
+        </fieldset> 
+    
+        <div id="billing_info" class="form-group mainhide">
+        <fieldset id="field2">
+        <legend>Billing Information</legend>
+            <div class="form-group">
+                <input  type="checkbox" id="billing_info_sameID" name="bill_info_same">
+                <label for="bill_info_same" class="control-label">Same as delivery information</label>         
+            </div>
+            <div class="form-group">
+                <label for="bill_name" class="control-label col-sm-3">First Name:</label>
+                <div class="col-sm-6">
+                    <input id="billNameID" type="text" name="bill_name" class="form-control" placeholder="Your First Name" >
+                </div>
+                <div class="col-sm-3">
+                    <label id="nameMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter first your name</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="bill_Lname" class="control-label col-sm-3">Last Name:</label>
+                <div class="col-sm-6">
+                    <input id="billLNameID" type="text" name="bill_Lname" class="form-control" placeholder="Your Last Name" >
+                </div>
+                <div class="col-sm-3">
+                    <label id="nameMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter your last name</label>
+                </div>
+            </div>
+            <div class="form-group">    
+                <label for="bill_street_address" class="control-label col-sm-3">Street Address:</label>
+                <div class="col-sm-6">
+                    <input id="billStreetID" type="text" name="bill_street_address" class="form-control" placeholder="Address">
+                </div>
+                <div class="col-sm-3">
+                    <label id="streetMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter your street</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <!--billing code-->    
+                <label for="bill_optional_apt" class="control-label col-sm-3">Apt,Suite,Room:</label>   
+                <div class="col-sm-6">
+                    <input id="billAptNoID" type="text" name="bill_optional_apt" class="form-control" placeholder="apt ste room">
+                </div>  
+                <div class="col-sm-3">
+                    <label id="aptnoMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter Apt,Suite,Room</label>
+                </div> 
+            </div>
+            <div class="form-group">
+                <label for="bill_city" class="control-label col-sm-3">City:</label>
+                <div class="col-sm-6">
+                    <input id="billCityID" type="text" name="bill_city" class="form-control" placeholder="City">
+                </div>
+                <div  class="col-sm-3">
+                    <label id="cityMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter City</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="bill_state" class="control-label col-sm-3">State:</label>
+                <div class="col-sm-6">
+                    <input id="billStateID" type="text" name="bill_state" class="form-control" placeholder="State">
+                </div>
+                <div  class="col-sm-3">
+                    <label id="stateMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter State</label>
+                </div> 
+            </div>
+            <div class="form-group">
+                <label for="bill_zip" class="control-label col-sm-3">Zip Code:</label>
+                <div class="col-sm-6">
+                    <input id="billZipCodeID" type="text" name="bill_zip" class="form-control" placeholder="Zip Code">
+                </div>
+                <div  class="col-sm-3">
+                    <label id="zipMsg2ID" class="control-label col-sm-10 redtext hidethis" redtext>Enter Zipcode</label>
+                </div> 
+            </div>
+            <div  class="form-group">
+                <label for="cc_number" class="control-label col-sm-3">Credit Card Number:</label>
+                <div id="cc_number" class="col-sm-6">
+                    <input type="text" name="cc_number" id="ccNumberID" class="form-control">
+                </div>
+                <div  class="col-sm-3">
+                    <label id="ccMsg2ID" class="control-label col-sm-10 redtext hidethis" redtext>Enter valid card no</label>
+                </div> 
+            </div>
+            <div class="form-group">
+                <label for="cvc" class="control-label col-sm-3">CVC Code</label>
+                <div class="col-sm-6">
+                    <input id="cvcID" type="text" name="cvc" class="form-control" placeholder = "987">
+                </div>
+                <div  class="col-sm-3">
+                    <label id="cvcMsg2ID" class="control-label col-sm-10 redtext hidethis" redtext>Enter CVC code</label>
+                </div> 
+            </div>
+            <div class="form-group">
+            <label for="bill_month" class="control-label col-sm-3">Expiration</label>
+                <div class="col-sm-4">
+                    <select name="bill_month" class="form-control">
+                        <option value="1">01-Jan</option>
+                        <option value="2">02-Feb</option>
+                        <option value="3">03-Mar</option>
+                        <option value="4">04-Apr</option>
+                        <option value="5">05-May</option>
+                        <option value="6">06-Jun</option>
+                        <option value="7">07-Jul</option>
+                        <option value="8">08-Aug</option>
+                        <option value="9">09-Sep</option>
+                        <option value="10">10-Oct</option>
+                        <option value="11">11-Nov</option>
+                        <option value="12">12-Dec</option>
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <select name="bill_year" class="form-control">
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+        <button id="btnVerifyBillingID" type="button">Verify Billing Information</button> 
+    </div> 
+    <div class="col-lg-6">
+            <input id="calculateID" type="button" class="form control btn-lg" value="Calculate Cost">
+            <input id="totalCostID" type="text" value="Total Cost: ">
+            <input id="form-submit" type="button" class="form control btn-lg" value="Place Your Order">   
+            <input id="orderPlacedID" type="text" value="">  
+     </div>
+    
+    <fieldset id="visibilityPrepareBilling">
+            <legend><h2>End of Billing Information</h2></legend>
+    </fieldset> 
+    
+        
+    </div>
 </div>
 		
 <!--    </div>  /container -->
@@ -357,243 +490,5 @@
  </footer>   
     
 </body>
-=======
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <title>ASSIGNMENT 5</title>
-        <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-        </script>
-        <![endif]-->
-        <link href="styles/main.css" type="text/css" rel="stylesheet" />
-        
-        <script src="js/script.js" type="text/JavaScript"></script>
 
-<!--Step 5-->
-<!--
-    <script> 
-        if(window.addEventListener){
-          window.addEventListener('load', init);
-        }
-        function init(){
-             var myButton = document.getElementById("myButton");                    
-             myButton.onclick = function(){
-                window.alert("I have been clicked");
-             }
-        }
-    </script> 
--->
-    </head>
-    
-    <body>
-        <header>
-            <h1>ASSIGNMENT #5</h1>
-        </header>
-        
-        <article>
-            <p>Practice with Forms and the DOM Event Model</p>
-        </article>
-<!--        
-    COMM644
-    Assignment 5
-    Practice with Forms and the DOM Event Model 
-    In this part of the assignment you will practice working with form objects and the DOM Event Model:
--->
-<!--
-    1.Add a button to a web page. Use the old school HTML attribute method to attach a click event handler to 
-    the button. That handler should call a function that displays the message “I have been clicked” out into an alert box.
--->
-<!--
-    <script>
-        function displayMsgHandler(){
-             window.alert("I have been clicked");
-        }               
-    </script>
-    <button onclick="displayMsgHandler()">Click me</button>        
--->
-        
-        
-<!--        
-    2.Add a button to a web page and uniquely ID the button. Write a script that finds the button by its ID. 
-    Then use the DOM Element method to associate a function with the onclick event of the button. Again, display the message “I have been clicked” out into an alert box.
--->
-<!--
-    <button id="myButton">Click me</button>    
-    <script>
-        document.getElementById("myButton").addEventListener("click", function(){
-        window.alert("I have been clicked");
-        });
-    </script>        
--->
-                
-<!--      
-    3.Add a button to a web page and uniquely ID the button. Write a script that attaches an event listener to
-    the button and listens for the click event. When it’s heard, a user-defined function should be called and 
-    the message “I have been clicked” should be displayed out into an alert box.
--->
-<!--
-    <button id="myButton">Click me</button> 
-    <script>        
-        var myElement = document.getElementById("myButton");
-
-        if (myElement.addEventListener) {    // For most browsers, except IE 8 and earlier versions
-            myElement.addEventListener("click", displayMsgHandler);
-        } else if (myElement.attachEvent) {  // For IE 8 and earlier versions
-            myElement.attachEvent("onclick", displayMsgHandler);
-        }        
-
-        function displayMsgHandler(){
-             window.alert("I have been clicked");
-        }               
-    </script>
--->
-        
-<!--      
-    4.Modify the code within step 3 so that the code that displays an alert box is written directly within a callback function as opposed to a user-defined function.
--->
-<!--      
-    <button id="myButton">Click me</button> 
-    <script>        
-        var myElement = document.getElementById("myButton");     
-
-        myElement.onclick = function(){
-             window.alert("I have been clicked");
-        }
-    </script> 
---> 
-
-<!--
-    5.Modify the code in step 4 so that you can write your script within the <head> tag of the page rather than underneath the button in the markup.
--->
-<!--      
-    <button id="myButton">Click me</button>       
--->
-<!--      script code is in the head section-->
-<!--
-    6.Add a link to your web page. Add the text “Visit Google” to the link, set the ID to “redirect” and set the href attribute to http://www.google.com. Now, write a script that alerts the user that they clicked on the link but prevents the browser from also redirecting to the Google site.
--->  
-<!--
-    <a href="http://www.google.com." id="redirect">Visit Google</a>
-    <script>
-        var redLink = document.getElementById("redirect");
-        redLink.onclick = function(event){ 
-           window.alert("You have clicked on the link");
-           event.preventDefault();
-        }
-    </script>      
--->
-       
-<!--      
-    7.Add a text box and a button to a web page. Add an event listener to the button. When the click event is heard, the button should be disabled, and the text that the user input into the text box should be displayed within an alert box.
--->
-<!--
-    <input type="text" id="boxInput" />
-    <input type="button" value="submit" id="myButton" />
-
-    <script>
-    var button = document.getElementById("myButton");
-    button.addEventListener("click", displayInput, false);
-         if (button.addEventListener) {    // For all major browsers, except IE 8 and earlier
-            button.addEventListener("click", displayInput, false);
-        } else if (btn.attachEvent) {  // For IE 8 and earlier versions
-            button.attachEvent("onclick", displayInput);
-        } 
-
-    function displayInput() {
-        button.disabled = true;
-        alert(document.getElementById("boxInput").value);
-    }
-                
-    </script>         
--->
-        
-<!--
-    8.Create a new page called newpage.html. You will now have 2 web pages including index.html and 
-    newpage.html. Add a button to index.html. When the button is clicked, newpage.html should appear as a popup window at 300 pixels wide by 300 pixels high. As soon as newpage.html loads however, resize the window to 
-    500 pixels wide by 300 pixels high. You will need to handle the load event on newpage.html and use a BOM 
-    method on newpage.html to accomplish this task.
--->
-<!--
-    <button id="buttonID">Click me</button>         
-    <script>
-        var button = document.getElementById("buttonID");        
-        if (button.addEventListener) {    // For all major browsers, except IE 8 and earlier versions
-            button.addEventListener("click", popUpNewPage);
-        } else if (button.attachEvent) {  // For IE 8 and earlier versions
-            button.attachEvent("onclick", popUpNewPage);
-        } 
-        function popUpNewPage(){
-            var newWindow = window.open("newpage.html",null,"height=300,width=300,status=yes,toolbar=no,menubar=no,location=no");  
-        }
-    </script>
-                
--->
-        
-<!--
-    9.Add two buttons to a web page. Add the text Start to one button and Stop to the other button. Using 
-    the BOM .setInterval() method, figure out a way to move display the text “Learning JavaScript is fun!” into the console window every 2 seconds but only when the Start button is clicked. If the user clicks on the Stop button, the console should stop logging the text immediately.
--->
-<!--
-    <button id="startID">START</button>
-    <button id="stopID">STOP</button>      
-    <script>  
-        function displayTextEvery2Secs(){
-            window.console.log("Learning Javascript is fun!");
-        }
-        var id = setInterval(displayTextEvery2Secs, 2000);
-        function stopDisplayingText(){
-            clearInterval(id);
-        }         
-        var startButton = document.getElementById("startID");        
-            if (startButton.addEventListener) {    // For all major browsers, except IE 8 and earlier
-                startButton.addEventListener("click", displayTextEvery2Secs);
-            } else if (startButton.attachEvent) {  // For IE 8 and earlier versions
-                startButton.attachEvent("onclick", displayTextEvery2Secs);
-            }         
-        var stopButton = document.getElementById("stopID");        
-            if (stopButton.addEventListener) {    // For all major browsers, except IE 8 and earlier
-                stopButton.addEventListener("click", stopDisplayingText);
-            } else if (stopButton.attachEvent) {  // For IE 8 and earlier versions
-                stopButton.attachEvent("onclick", stopDisplayingText);
-            }                
-    </script>         
--->
-       
-<!--
-    10.Add a drop down list to a web page. Populate the drop down list with 4 items. Add a button next to the 
-    drop down list and set the text to “Select”. When the user clicks the button, the item selected in the drop down list should appear within an alert box.
--->
-<!--
-    <select id="myFavoritFood" name="Food">
-        <option value="Main Course = Chelo Kabab">Chelo Kabab </option>
-        <option value="khoresht = Chelo Khoresht">Chelo Khoresht   </option>
-        <option value="salad = Vegi Salad">Vegi Salad </option>
-        <option value="desert = Banana Split">Banana Split </option>
-    </select>
-    <button id="buttonID">Select</button>        
-
-    <script>
-        var selButton = document.getElementById("buttonID");        
-            if (selButton.addEventListener) {    // For all major browsers, except IE 8 and earlier versions
-                selButton.addEventListener("click", displaySelectedItem);
-            } else if (selButton.attachEvent) {  // For IE 8 and earlier versions
-                selButton.attachEvent("onclick", displaySelectedItem);
-            }         
-        var choice = document.getElementById("myFavoritFood");
-
-        function displaySelectedItem(){
-            var myChoice = choice.options[choice.selectedIndex].value;
-            window.alert( myChoice ); 
-        }               
-    </script>       
--->
-        <footer>
-            <p>&copyopyright 2016 ©Manu R®</p>
-        </footer>
-        
-    </body>
->>>>>>> e8d3cccbce389d2b791d71323e85ad439c9e38a5
 </html>
