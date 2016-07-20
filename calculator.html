@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+ <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <title>Assignment 5, Part 2 Calculator</title>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+        </script>
+        <![endif]-->
+        <link href="styles/main.css" type="text/css" rel="stylesheet" />
+        
+        <script src="js/script.js" type="text/JavaScript"></script>
+
+<script>
+
+    
+    var sum,x;
+        function enterValue(){
+            x = this.value;
+            sum = document.getElementById("result").value;
+            sum += x;
+            document.getElementById("result").value = sum;
+        }
+            
+        function calculate () {
+          var result = eval(sum);
+          document.getElementById("result").value = result;
+        }
+    window.addEventListener("load", initClaculator, false);
+    function initClaculator () {
+        
+        
+        one.addEventListener("click", enterValue, false);  
+        two.addEventListener("click", enterValue, false);   
+        three.addEventListener("click", enterValue, false);   
+        four.addEventListener("click", enterValue, false);   
+        five.addEventListener("click", enterValue, false);   
+        six.addEventListener("click", enterValue, false);   
+        seven.addEventListener("click", enterValue, false);   
+        eight.addEventListener("click", enterValue, false);   
+        nine.addEventListener("click", enterValue, false);   
+        zero.addEventListener("click", enterValue, false);   
+        add.addEventListener("click", enterValue, false);   
+        subtract.addEventListener("click", enterValue, false);   
+        multiply.addEventListener("click", enterValue, false);   
+        divide.addEventListener("click", enterValue, false);   
+        period.addEventListener("click", enterValue, false);
+
+        equal.addEventListener("click", calculate, false);   
+
+    }
+    
+    
+</script>
+</head>
+
+<body id="body">
+    <header>
+            <h1>ASSIGNMENT #5, Part 2 Calculator</h1>
+    </header>
+        
+    <article>
+        <p>Practice with Forms and the DOM Event Model</p>
+    </article>
+    <div>
+        <input type="text" readonly id="result">
+        <br>
+        <input type="button" id="seven" value="7">
+        <input type="button" id="eight" value="8">
+        <input type="button" id="nine" value="9">
+        <input type="button" id="divide" value="/">
+        <br>
+        <input type="button" id="four" value="4">
+        <input type="button" id="five" value="5">
+        <input type="button" id="six" value="6">
+        <input type="button" id="multiply" value="*">
+        <br>
+        <input type="button" id="one" value="1">
+        <input type="button" id="two" value="2">
+        <input type="button" id="three" value="3">
+        <input type="button" id="subtract" value="-">
+        <br>
+        <input type="button" id="zero" value="0">
+        <input type="button" id="period" value=".">
+        <input type="button" id="add" value="+">
+        <input type="button" id="equal" value="=">
+    </div>
+    
+    <footer>
+        <p>&copyopyright 2016 ©Manu R®</p>
+    </footer>
+        
+    </body>
+</html>
